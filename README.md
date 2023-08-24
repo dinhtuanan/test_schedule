@@ -1,6 +1,6 @@
 # Test Schedule python library
-Python version: 3.9.13
-Virtual Env: venv
+1. Python version: 3.9.13
+1. Virtual Env: venv
 ## Create venv project
 ```
 python -m venv schedule_env
