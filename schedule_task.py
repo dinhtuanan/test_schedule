@@ -97,13 +97,14 @@ if __name__ == '__main__':
     #     schedule.run_pending()
     
 
-    schedule.every().second.do(job_that_executes_once)
+    schedule.every().second.do(background_job)
 
     # Start the background thread
     stop_run_continuously = run_continuously()
     
     # task main thread do here
-    time.sleep(10)
+    print("task main thread do here")
+    time.sleep(5)
     
     # Stop the background thread
     stop_run_continuously.set()
